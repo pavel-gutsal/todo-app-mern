@@ -1,0 +1,57 @@
+.TodoElement {
+  display: flex;
+  border-left: 4px solid rgb(173, 213, 255);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  &__wrapper {
+    width: 250px;
+    height: fit-content;
+  }
+
+  &__deleteBtn {
+    display: flex;
+    background: none;
+    border: none;
+    width:40px;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  &__img {
+    width:24px;
+    height:24px;
+  }
+
+  &__text,
+  &__time {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 5px;
+
+    &.checked {
+      text-decoration: line-through;
+      color: rgb(87, 87, 87);
+    }
+  }
+
+  &__text {
+    max-width: 200px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    height: auto;
+  }
+}

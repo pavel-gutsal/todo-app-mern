@@ -1,0 +1,15 @@
+.TodosList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+  max-height: 70vh;
+  overflow: scroll;
+  padding: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+}
+.TodosList::-webkit-scrollbar {
+  display: none;
+}
